@@ -30,9 +30,6 @@
     this.$element.append(rowElement.$element);
   };
 
-  CheckList.prototype.removeRow = function (email) {
-    this.$element.find("[value=\"" + email + "\"]").closest("[data-coffee-order='checkbox']").remove();
-  };
 
   CheckList.prototype.removeRow = function (email) {
     this.$element
@@ -49,6 +46,7 @@
     });
 
     var $label = $("<label></label>");
+
     var $checkbox = $("<input></input>", {
       type: "checkbox",
       value: coffeeOrder.emailAddress
