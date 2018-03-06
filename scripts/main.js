@@ -1,6 +1,6 @@
 (function (window) {
   "use stric";
-    //var $ = window.jQuery;
+  //var $ = window.jQuery;
 
 
   var FORM_SELECTOR = "[data-coffee-order='form']";
@@ -18,10 +18,10 @@
   var formHandler = new FormHandler(FORM_SELECTOR);
 
 
-  formHandler.addSubmitHandler(function (data){
+  formHandler.addSubmitHandler(function (data) {
     myTruck.createOrder.call(myTruck, data);
     checkList.addRow.call(checkList, data);
   });
 
-  
+
 })(window);
