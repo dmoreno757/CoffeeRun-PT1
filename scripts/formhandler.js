@@ -42,6 +42,9 @@
     $("#payConfirmation").text("Thank you for your payment " + data.username);
     $("#sticky").modal({});
     console.log(data);
+
+    this.reset();
+    this.elements[0].focus();
   });
 
 
